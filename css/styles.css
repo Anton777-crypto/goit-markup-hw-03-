@@ -3,11 +3,28 @@ body {
   color: #434455;
   background-color: #ffffff;
 }
-
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-div {
+  display: flex;
+}
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
 a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
 ul {
   list-style: none;
 }
@@ -19,8 +36,9 @@ ul {
   line-height: 117%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
-.logo {
+.logo-h {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -28,6 +46,10 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
+}
+.nav-ul {
+  display: flex;
+  gap: 40px;
 }
 .adress {
   font-style: normal;
@@ -46,12 +68,17 @@ ul {
 .adress-a:focus {
   color: #404bbf;
 }
+.adress-ul {
+  display: flex;
+  gap: 40px;
+}
 .nav-li {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
 }
 .nav-li:hover {
   color: #404bbf;
@@ -62,8 +89,10 @@ ul {
 
 .header-section {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 .header-section-h {
+  max-width: 496px;
   font-weight: 700;
   font-size: 56px;
   line-height: 107%;
@@ -82,6 +111,12 @@ ul {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  display: block;
+  min-width: 169px;
+  border-radius: 4px;
+  height: 56px;
+  border: none;
+  background-color: #4d5ae5;
 }
 .btn:hover {
   background-color: #404bbf;
@@ -89,7 +124,26 @@ ul {
 .btn:focus {
   background-color: #404bbf;
 }
-
+.section-two {
+  padding: 120px 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.section-two-ul {
+  display: flex;
+  gap: 24px;
+}
+.section-two-li {
+  width: calc((100% - 72px) / 4);
+}
 .section-two-h {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -97,6 +151,7 @@ ul {
   line-height: 120%;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .section-two-p {
@@ -110,9 +165,11 @@ ul {
 
 .section-three {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 
 .section-three-h {
+  margin-bottom: 72px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -122,9 +179,18 @@ ul {
   color: #2e2f42;
   text-transform: capitalize;
 }
+.section-three-ul {
+  display: flex;
+  gap: 24px;
+}
 
 .section-three-li {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.img-comment-div {
+  padding: 32px 0;
 }
 .img-comment-h {
   font-weight: 500;
@@ -133,6 +199,8 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .img-comment-p {
@@ -142,9 +210,14 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  text-align: center;
 }
-
-.section-four {
+.section-fou {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.section-fou-hh {
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -152,8 +225,14 @@ ul {
   color: #2e2f42;
   text-transform: capitalize;
 }
-
+.section-four-ul {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
 .section-four-li {
+  width: calc((100% - 48px) / 3);
 }
 .section-four-h {
   font-weight: 500;
@@ -161,6 +240,7 @@ ul {
   line-height: 120%;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .section-four-p {
   font-weight: 400;
@@ -169,10 +249,27 @@ ul {
   letter-spacing: 0.02em;
   color: #434455;
 }
+.section-four-coment {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
-
+.logo {
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 117%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-right: 76px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
 .logo-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -181,9 +278,11 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+  display: inline-block;
 }
 .footer-p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }
