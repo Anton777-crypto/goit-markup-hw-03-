@@ -168,6 +168,7 @@ ol {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  max-width: 496px;
 }
 
 .section-two-p {
