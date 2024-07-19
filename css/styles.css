@@ -5,7 +5,6 @@ body {
 }
 .header {
   border-bottom: 1px solid #e7e9fc;
-  padding: 20px;
 }
 .header-div {
   display: flex;
@@ -48,7 +47,7 @@ ol {
   padding-left: 0;
 }
 .logo-header {
-  padding-top: 20px;
+  padding-top: 24px 0;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -70,12 +69,10 @@ ol {
 .nav-ul {
   display: flex;
   gap: 40px;
-  padding-top: 20px;
 }
 .adress {
   font-style: normal;
-  margin: 0 auto;
-  padding-top: 20px;
+  margin-left: auto;
 }
 
 .adress-a {
@@ -84,6 +81,8 @@ ol {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
+  padding: 24px 0;
+  display: block;
 }
 .adress-a:hover {
   color: #404bbf;
@@ -102,6 +101,7 @@ ol {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
+  display: block;
 }
 .nav-li:hover {
   color: #404bbf;
@@ -113,6 +113,7 @@ ol {
 .header-section {
   background-color: #2e2f42;
   padding: 188px 0;
+  margin-bottom: 48px;
 }
 
 .header-section-h {
@@ -295,7 +296,7 @@ ol {
   line-height: 117%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
+
   display: inline-block;
   margin-bottom: 16px;
 }
